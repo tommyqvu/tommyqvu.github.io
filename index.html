@@ -12,22 +12,22 @@
     />
   </head>
   <body>
-    <!-- <div class="preloader"></div> -->
-
     <!-- Hey there!! -->
     <!-- Intro -->
     <section id="home">
       <header class="container-intro flex">
         <div class="flex intro">
-          <div class="text-intro">
-            Hello, I'm <span id="intro-name">`Tom ${Vu}` </span>;)
+          <div class="">
+            Hi, I'm <span id="intro-name">`Tom ${Vu}` </span>
             <br />
-            Frontend developer based in Prague
+            A frontend developer based in Prague
             <img id="location" src="./img/location-icon.png" alt="" />
           </div>
           <div class="nav-button">
             <div class="button" id="box-btn">
-              <a target="_blank" href="#projects" id="view-work">View my work</a>
+              <a target="_blank" href="#projects" id="view-work"
+                >View my work</a
+              >
             </div>
             <div class="button" id="box-btn">
               <a target="_blank" href="#dash" id="view-work">Contact me</a>
@@ -55,9 +55,9 @@
     <!-- End of navigation -->
     <!-- Techs showcase -->
     <section id="technologies">
-      <h2 id="techh2">Technologies</h2>
+      <h2 id="tech2">Technologies</h2>
       <div class="container techs-container">
-        <div class="tech">
+        <div class="tech" id="html5">
           <svg viewBox="0 0 128 128">
             <path
               fill="#E44D26"
@@ -65,7 +65,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="css3">
           <svg viewBox="0 0 128 128">
             <path
               fill="#1572B6"
@@ -77,7 +77,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="javascript">
           <svg viewBox="0 0 128 128">
             <path
               fill="#F0DB4F"
@@ -85,14 +85,14 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="reactjs">
           <svg viewBox="0 0 128 128">
             <path
               d="M64 81.7c7.3 7.1 14.5 11.3 20.3 11.3 1.9 0 3.7-.4 5.2-1.3 5.2-3 7.1-10.5 5.3-21.2-.3-1.9-.7-3.8-1.2-5.8 2-.6 3.8-1.2 5.6-1.8 10.1-3.9 15.7-9.3 15.7-15.2 0-6-5.6-11.4-15.7-15.2-1.8-.7-3.6-1.3-5.6-1.8.5-2 .9-3.9 1.2-5.8 1.7-10.9-.2-18.5-5.4-21.5-1.5-.9-3.3-1.3-5.2-1.3-5.7 0-13 4.2-20.3 11.3-7.2-7.1-14.4-11.3-20.2-11.3-1.9 0-3.7.4-5.2 1.3-5.2 3-7.1 10.5-5.3 21.2.3 1.9.7 3.8 1.2 5.8-2 .6-3.8 1.2-5.6 1.8-10.1 3.9-15.7 9.3-15.7 15.2 0 6 5.6 11.4 15.7 15.2 1.8.7 3.6 1.3 5.6 1.8-.5 2-.9 3.9-1.2 5.8-1.7 10.7.2 18.3 5.3 21.2 1.5.9 3.3 1.3 5.2 1.3 5.8.2 13-4 20.3-11zm-5.6-13.5c1.8.1 3.7.1 5.6.1 1.9 0 3.8 0 5.6-.1-1.8 2.4-3.7 4.6-5.6 6.7-1.9-2.1-3.8-4.3-5.6-6.7zm-12.4-10.3c1 1.7 1.9 3.3 3 4.9-3.1-.4-6-.9-8.8-1.5.9-2.7 1.9-5.5 3.1-8.3.8 1.6 1.7 3.3 2.7 4.9zm-5.8-24.1c2.8-.6 5.7-1.1 8.8-1.5-1 1.6-2 3.2-3 4.9-1 1.7-1.9 3.3-2.7 5-1.3-2.9-2.3-5.7-3.1-8.4zm5.5 13.7c1.3-2.7 2.7-5.4 4.3-8.1 1.5-2.6 3.2-5.2 4.9-7.8 3-.2 6-.3 9.1-.3 3.2 0 6.2.1 9.1.3 1.8 2.6 3.4 5.2 4.9 7.8 1.6 2.7 3 5.4 4.3 8.1-1.3 2.7-2.7 5.4-4.3 8.1-1.5 2.6-3.2 5.2-4.9 7.8-3 .2-6 .3-9.1.3-3.2 0-6.2-.1-9.1-.3-1.8-2.6-3.4-5.2-4.9-7.8-1.6-2.7-3-5.4-4.3-8.1zm39.1-5.4l-2.7-5c-1-1.7-1.9-3.3-3-4.9 3.1.4 6 .9 8.8 1.5-.9 2.8-1.9 5.6-3.1 8.4zm0 10.8c1.2 2.8 2.2 5.6 3.1 8.3-2.8.6-5.7 1.1-8.8 1.5 1-1.6 2-3.2 3-4.9.9-1.5 1.8-3.2 2.7-4.9zm2.3 34.7c-.8.5-1.8.7-2.9.7-4.9 0-11-4-17-10 2.9-3.1 5.7-6.6 8.5-10.5 4.7-.4 9.2-1.1 13.4-2.1.5 1.8.8 3.6 1.1 5.4 1.4 8.5.3 14.6-3.1 16.5zm5.2-52.7c11.2 3.2 17.9 8.1 17.9 12.6 0 3.9-4.6 7.8-12.7 10.9-1.6.6-3.4 1.2-5.2 1.7-1.3-4.1-2.9-8.3-4.9-12.6 2-4.3 3.7-8.5 4.9-12.6zm-8-28.2c1.1 0 2 .2 2.9.7 3.3 1.9 4.5 7.9 3.1 16.5-.3 1.7-.7 3.5-1.1 5.4-4.2-.9-8.7-1.6-13.4-2.1-2.7-3.9-5.6-7.4-8.5-10.5 6-5.9 12.1-10 17-10zm-14.7 20.1c-1.8-.1-3.7-.1-5.6-.1s-3.8 0-5.6.1c1.8-2.4 3.7-4.6 5.6-6.7 1.9 2.1 3.8 4.4 5.6 6.7zm-28.7-19.4c.8-.5 1.8-.7 2.9-.7 4.9 0 11 4 17 10-2.9 3.1-5.7 6.6-8.5 10.5-4.7.4-9.2 1.1-13.4 2.1-.5-1.8-.8-3.6-1.1-5.4-1.4-8.5-.3-14.5 3.1-16.5zm-5.2 52.7c-11.2-3.2-17.9-8.1-17.9-12.6 0-3.9 4.6-7.8 12.7-10.9 1.6-.6 3.4-1.2 5.2-1.7 1.3 4.1 2.9 8.3 4.9 12.6-2 4.3-3.7 8.6-4.9 12.6zm2.1 11c.3-1.7.7-3.5 1.1-5.4 4.2.9 8.7 1.6 13.4 2.1 2.7 3.9 5.6 7.4 8.5 10.5-6 5.9-12.1 10-17 10-1.1 0-2-.2-2.9-.7-3.4-1.9-4.5-8-3.1-16.5zM33.6 112.3c2.2-2.7 2.3-5.7 1.1-8.7-1.2-3-3.7-4.4-6.8-4.5-3.7-.1-7.5 0-11.2 0h-.7v25.9h3v-9.8h4.7c.6 0 1.1.2 1.4.7l6 9.3c.1.2.4.5.6.5h3.9c-2.4-3.7-4.7-7.2-7.1-10.8 2.1-.3 3.9-1 5.1-2.6zm-14.6-.2v-9.9h1.1c2.3 0 4.7-.1 7 .1 2.7.1 4.6 2.2 4.6 4.9s-2.2 4.8-4.9 4.9c-2.4.1-4.8 0-7.8 0zM57.7 113.4c-1.6-7-8-8.8-12.9-6.6-3.8 1.7-5.5 5-5.6 9.1-.1 3.1.8 5.9 3.2 8 2.7 2.4 6 2.7 9.4 2.1 1.9-.4 3.6-1.3 4.9-2.7-.5-.7-1-1.4-1.5-2-2.8 2.4-5.9 3.2-9.3 1.6-2.2-1.1-3.3-3.8-3.5-5.8h15.5v-1.3c.1-.9 0-1.7-.2-2.4zm-15.1 1.6c-.3-3 2.7-6.2 6-6.2 3.8-.1 6.2 2.2 6.3 6.2h-12.3zM73.3 106.3c-1.5-.3-3.1-.4-4.6-.3-2.4.2-4.5 1.3-6.2 3.1.5.7.9 1.4 1.5 2.2.2-.2.4-.4.6-.5 1.6-1.5 3.5-2.3 5.8-2.1 1.8.1 3.5.7 4 2.5.4 1.4.3 2.9.4 4.4-.3 0-.4-.1-.5-.2-2.4-2-5.1-2.4-8-1.7-2.7.7-4.4 2.8-4.6 5.5-.2 3.1 1.2 5.4 3.9 6.5 1.7.7 3.6.7 5.4.3 1.4-.3 2-1.1 4-2.2v1.3h2.8c0-4 .1-8.9 0-13.5 0-2.9-1.7-4.7-4.5-5.3zm1.4 12.6c-.1.3 0 .6 0 .9 0 2.1-.5 2.8-2.5 3.6-1.4.5-2.9.7-4.4.2-1.7-.5-2.9-2-2.9-3.7-.1-1.7 1-3.4 2.7-3.9 2.3-.8 4.4-.3 6.3 1.1.6.5 1 1 .8 1.8zM90.3 109c2.6-.8 5-.3 6.8 1.9l.3.2c.7-.6 1.3-1.2 2.1-1.9-.3-.3-.4-.5-.6-.8-2.9-3.1-8.6-3.5-12.1-1-4.9 3.6-4.8 10.6-2.4 14.3 2.3 3.5 5.6 4.7 9.5 4.2 2.3-.3 4.2-1.4 5.7-3.3-.7-.6-1.4-1.2-2.1-1.9-.2.2-.3.3-.4.5-2.7 3-7.2 2.7-9.6-.5-1.4-1.9-1.7-4.1-1.3-6.3.2-2.5 1.5-4.5 4.1-5.4zM111.1 122.6c-.2.1-.3.2-.3.2-.8.6-1.6.7-2.5.4-.9-.4-1-1.2-1.1-2v-11.4c0-.2 0 .2.1-.8h3.8v-3h-4v-5h-3v5.4h-2.6c-.2 0-.5.2-.5.4-.1.7 0 1.2 0 2.2h3.2v12.799999999999999c0 1.6.4 3 1.8 3.8 1.5.9 4.4.7 5.7-.4.2-.1.3-.5.3-.6-.3-.6-.6-1.3-.9-2z"
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="git">
           <svg viewBox="0 0 128 128">
             <path
               fill="#F34F29"
@@ -100,7 +100,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="nodejs">
           <svg viewBox="0 0 128 128">
             <path
               fill="#83CD29"
@@ -108,7 +108,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="mongodb">
           <svg viewBox="0 0 128 128">
             <path
               fill-rule="evenodd"
@@ -118,7 +118,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <!-- <div class="tech" id="mysql">
           <svg viewBox="0 0 128 128">
             <path
               fill="#00618A"
@@ -133,8 +133,8 @@
               d="M122.336 66.952c-2.525-.069-4.454.166-6.104.861-.469.198-1.216.203-1.292.79.257.271.297.674.502 1.006.394.637 1.059 1.491 1.652 1.938.647.489 1.315 1.013 2.011 1.437 1.235.754 2.615 1.184 3.806 1.938.701.446 1.397 1.006 2.082 1.509.339.247.565.634 1.006.789v-.071c-.231-.294-.291-.698-.503-1.006l-.934-.934c-.913-1.212-2.071-2.275-3.304-3.159-.982-.705-3.18-1.658-3.59-2.801l-.072-.071c.696-.079 1.512-.331 2.154-.503 1.08-.29 2.045-.215 3.16-.503l1.508-.432v-.286c-.563-.578-.966-1.344-1.58-1.867-1.607-1.369-3.363-2.737-5.17-3.879-1.002-.632-2.241-1.043-3.304-1.579-.356-.181-.984-.274-1.221-.575-.559-.711-.862-1.612-1.293-2.441-.9-1.735-1.786-3.631-2.585-5.458-.544-1.245-.9-2.473-1.579-3.59-3.261-5.361-6.771-8.597-12.208-11.777-1.157-.677-2.55-.943-4.021-1.292l-2.37-.144c-.481-.201-.983-.791-1.436-1.077-1.802-1.138-6.422-3.613-7.756-.358-.842 2.054 1.26 4.058 2.011 5.099.527.73 1.203 1.548 1.58 2.369.248.54.29 1.081.503 1.652.521 1.406.976 2.937 1.651 4.236.341.658.718 1.351 1.149 1.939.264.36.718.52.789 1.077-.443.62-.469 1.584-.718 2.369-1.122 3.539-.699 7.938.934 10.557.501.805 1.681 2.529 3.303 1.867 1.419-.578 1.103-2.369 1.509-3.95.092-.357.035-.621.215-.861v.072l1.293 2.585c.957 1.541 2.654 3.15 4.093 4.237.746.563 1.334 1.538 2.298 1.867v-.073h-.071c-.188-.291-.479-.411-.719-.646-.562-.551-1.187-1.235-1.651-1.867-1.309-1.776-2.465-3.721-3.519-5.745-.503-.966-.94-2.032-1.364-3.016-.164-.379-.162-.953-.502-1.148-.466.72-1.149 1.303-1.509 2.154-.574 1.36-.648 3.019-.861 4.739l-.144.071c-1.001-.241-1.352-1.271-1.724-2.154-.94-2.233-1.115-5.83-.287-8.401.214-.666 1.181-2.761.789-3.376-.187-.613-.804-.967-1.148-1.437-.427-.579-.854-1.341-1.149-2.011-.77-1.741-1.129-3.696-1.938-5.457-.388-.842-1.042-1.693-1.58-2.441-.595-.83-1.262-1.44-1.724-2.442-.164-.356-.387-.927-.144-1.293.077-.247.188-.35.432-.431.416-.321 1.576.107 2.01.287 1.152.479 2.113.934 3.089 1.58.468.311.941.911 1.508 1.077h.646c1.011.232 2.144.071 3.088.358 1.67.508 3.166 1.297 4.524 2.155 4.139 2.614 7.522 6.334 9.838 10.772.372.715.534 1.396.861 2.154.662 1.528 1.496 3.101 2.154 4.596.657 1.491 1.298 2.996 2.227 4.237.488.652 2.374 1.002 3.231 1.364.601.254 1.585.519 2.154.861 1.087.656 2.141 1.437 3.16 2.155.509.362 2.076 1.149 2.154 1.798zM90.237 39.593c-.526-.01-.899.058-1.293.144v.071h.072c.251.517.694.849 1.005 1.293l.719 1.508.071-.071c.445-.313.648-.814.646-1.58-.179-.188-.205-.423-.359-.646-.204-.3-.602-.468-.861-.719z"
             ></path>
           </svg>
-        </div>
-        <div class="tech">
+        </div> -->
+        <div class="tech" id="postgresql">
           <svg viewBox="0 0 128 128">
             <path
               fill-rule="evenodd"
@@ -148,7 +148,7 @@
             ></path>
           </svg>
         </div>
-        <div class="tech">
+        <div class="tech" id="express">
           <svg viewBox="0 0 128 128">
             <path
               d="M40.53,77.82V50.74H42V55a5.57,5.57,0,0,0,.48-.6,7.28,7.28,0,0,1,6.64-4.12c3.35-.1,6.07,1.14,7.67,4.12a13.24,13.24,0,0,1,.32,12.14c-1.49,3.34-5.17,5-9.11,4.39a7.37,7.37,0,0,1-5.88-3.88V77.82ZM42,60.32c.13,1.32.18,2.26.33,3.18.58,3.62,2.72,5.77,6.08,6.16A6.91,6.91,0,0,0,56,65.27a11.77,11.77,0,0,0-.26-9.68,6.77,6.77,0,0,0-7.13-3.94,6.59,6.59,0,0,0-5.89,4.87A33.4,33.4,0,0,0,42,60.32Z"
@@ -174,7 +174,7 @@
           </svg>
         </div>
 
-        <div class="tech">
+        <div class="tech" id="bootstrap">
           <svg viewBox="0 0 128 128">
             <path
               fill="#5B4282"
@@ -197,6 +197,7 @@
                 <li class="author">Budgety</li>
                 <li class="tags">
                   <ul>
+                    <li>JSX, CSS, Javascript</li>
                     <li>ReactJS</li>
                     <li>Responsive CSS</li>
                   </ul>
@@ -204,14 +205,16 @@
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://github.com/tommyqvu/Budgety-App-with-React"
                         title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://budgetyreact.herokuapp.com/"
                         title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
@@ -231,6 +234,8 @@
                 <li class="author">Burger Builder</li>
                 <li class="tags">
                   <ul>
+                    <li>JSX, CSS, Javascript</li>
+
                     <li>ReactJS with hooks, saga</li>
                     <li>Firebase database + authentication</li>
                     <li>Responsive CSS</li>
@@ -239,14 +244,16 @@
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://github.com/tommyqvu/BurgerApp-with-React-hooks"
                         title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://burgerbuilderjreactjs.herokuapp.com/"
                         title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
@@ -266,6 +273,8 @@
                 <li class="author">ChatApp</li>
                 <li class="tags">
                   <ul>
+                    <li>HTML, CSS, Javascript</li>
+
                     <li>NodeJS</li>
                     <li>Socket.io</li>
                     <li>Responsive CSS</li>
@@ -274,14 +283,16 @@
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://github.com/tommyqvu/ChatApp"
                         title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://chatappbytom.herokuapp.com/"
                         title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
@@ -305,20 +316,26 @@
                 <li class="author">FitFork</li>
                 <li class="tags">
                   <ul>
+                    <li>JSX, CSS, Javascript</li>
+
                     <li>ReactJS</li>
                   </ul>
                 </li>
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://github.com/tommyqvu/FitFork-ReactJS"
                         title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://fitfork.herokuapp.com/" title="Live app"
+                      <a
+                        target="_blank"
+                        href="https://fitfork.herokuapp.com/"
+                        title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
                       </a>
                     </li>
@@ -336,6 +353,8 @@
                 <li class="author">SquareFace</li>
                 <li class="tags">
                   <ul>
+                    <li>JSX, CSS, Javascript</li>
+
                     <li>ReactJS</li>
                     <li>NodeJS</li>
                     <li>ExpressJS</li>
@@ -346,14 +365,16 @@
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://github.com/tommyqvu/SquareFace-frontend"
                         title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank"
+                      <a
+                        target="_blank"
                         href="https://squareface.herokuapp.com/"
                         title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
@@ -370,11 +391,12 @@
           <div class="overlay">
             <div class="card">
               <ul>
-                <li class="author">Yelp Camp</li>
+                <li class="author">YelpCamp</li>
                 <li class="tags">
                   <ul>
+                    <li>EJS template, CSS, Javascript</li>
+
                     <li>NodeJS</li>
-                    <li>EJS template</li>
                     <li>MongoDB</li>
                     <li>JWT authentication</li>
                   </ul>
@@ -382,12 +404,18 @@
                 <li class="app-links">
                   <ul>
                     <li>
-                      <a target="_blank" href="#" title="Github repo"
+                      <a
+                        target="_blank"
+                        href="https://github.com/tommyqvu/Yelp-Camp"
+                        title="Github repo"
                         ><i class="devicon-github-plain"></i>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="#" title="Live app"
+                      <a
+                        target="_blank"
+                        href="https://yelpcamp-tommyvu.herokuapp.com/"
+                        title="Live app"
                         ><i class="devicon-heroku-plain-wordmark"></i>
                       </a>
                     </li>
@@ -405,14 +433,18 @@
       <div class="contact-section"><h2>Contact</h2></div>
       <div id="dash"></div>
       <div id="email-container">
-        <a  href="mailto:tomashv98@gmail.com" id="email"
+        <a href="mailto:tomashv98@gmail.com" id="email"
           >Email: tomashv98@gmail.com</a
         >
       </div>
       <div class="link-git">
         <ul>
           <li>
-            <a target="_blank" href="https://github.com/tommyqvu" title="Github repositories">
+            <a
+              target="_blank"
+              href="https://github.com/tommyqvu"
+              title="Github repositories"
+            >
               <svg viewBox="0 0 128 128">
                 <path
                   fill-rule="evenodd"
@@ -426,7 +458,8 @@
             </a>
           </li>
           <li>
-            <a target="_blank"
+            <a
+              target="_blank"
               href="https://www.linkedin.com/in/quan-thomas-vu-5b0808144/"
               title="Linkedin profile"
             >
