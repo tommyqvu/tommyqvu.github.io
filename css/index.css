@@ -84,12 +84,51 @@ h2 {
 .container-intro #intro-name {
   color: var(--main-yellow);
   font-family: 'Raleway-semibold', sans-serif;
+  margin: 0.25em 0;
+}
+
+@keyframes locationAnimation {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
 }
 
 .container-intro #location {
   width: 30px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: locationAnimation;
+  animation-name: locationAnimation;
+  animation-delay: 1.25s;
+  animation-duration: 2s;
 }
-
 .container-intro .button {
   line-height: 18px;
   border: 2px solid #fff;
@@ -108,8 +147,58 @@ h2 {
   background: var(--main-yellow);
   border-color: var(--main-yellow);
 }
+
 .nav-button {
   margin-top: 10px;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 0.9em;
+  /* font-weight: 400; */
+  margin-bottom: 1rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 0.7em;
+  animation-delay: 1.5s;
+  animation: moveInRight 1s ease-out;
+}
+
+.hello {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 /*Nav bar*/
 .sticky {
@@ -246,6 +335,10 @@ nav a {
   opacity: 1;
 }
 
+.image-container:hover .card .app-links a {
+  pointer-events: initial;
+}
+
 .card {
   position: absolute;
   top: 50%;
@@ -297,6 +390,7 @@ nav a {
 .card .app-links a {
   text-decoration: none;
   color: inherit;
+  pointer-events: none;
 }
 .card .app-links ul {
   padding: 0;
@@ -542,5 +636,9 @@ footer {
   .card .tags ul li {
     font-size: 1.5vw;
     font-weight: bold;
+  }
+  .container-intro #intro-name {
+    display: block;
+    margin: 0.25em 0;
   }
 }
