@@ -492,6 +492,7 @@ nav a {
 .about-me-des {
   width: 80%;
   margin: auto;
+  line-height: 1.75;
 }
 
 .about-me-connect {
